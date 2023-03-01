@@ -37,5 +37,11 @@ namespace RegularExpressionTestProgram
             string result = regex.ValidatePassword("VaibhavID");
             Assert.AreEqual("Valid", result);
         }
+        [Test]
+        public void ShouldReturn_Password_ValidOrNot_WithLeastOneUpperCase()
+        {
+            string result = regex.ValidatePasswordLeastUppercase("VaibhavID");
+            Assert.AreEqual("Valid", result);
+        }
     }
 }
