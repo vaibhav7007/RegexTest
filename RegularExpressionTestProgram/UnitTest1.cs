@@ -48,6 +48,12 @@ namespace RegularExpressionTestProgram
         {
             string result = regex.ValidatePasswordWithLeastNumericValue("Vaibhav12");
             Assert.AreEqual("Valid", result);
+        }
+        [Test]
+        public void ShouldReturn_Password_ValidOrNot_WithExactlyOneSpecialCharacter()
+        {
+            string result = regex.ValidatePasswordWithExactlyOneSpecialCharacter("Vaibhav1@");
+            Assert.AreEqual("Valid", result);
 
         }
     }
