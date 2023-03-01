@@ -13,5 +13,11 @@ namespace RegularExpressionTestProgram
             Assert.AreEqual("Valid", result);
             Assert.Pass();
         }
+        [Test]
+        public void ShouldReturn_LastName_ValidOrNot()
+        {
+            string result = regex.ValidateLastName("Mehta");
+            Assert.AreEqual("Valid", result);
+        }
     }
 }
