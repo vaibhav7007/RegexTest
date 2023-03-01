@@ -29,6 +29,11 @@ namespace RegularExpressionTest
             string pattern = "^[0-9]{2}[ ][0-9]{10}$";
             return TestPattern(pattern, input);
         }
+        public string ValidatePassword(string input)
+        {
+            string pattern = "^[a-zA-Z]{8,}$";
+            return TestPattern(pattern, input);
+        }
         public string TestPattern(string pattern, string name)
         {
             if (Regex.IsMatch(name, pattern))

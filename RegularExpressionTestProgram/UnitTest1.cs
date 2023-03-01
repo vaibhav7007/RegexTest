@@ -31,5 +31,11 @@ namespace RegularExpressionTestProgram
             string result = regex.ValidatePhoneNumber("91 6378023396");
             Assert.AreEqual("Valid", result);
         }
+        [Test]
+        public void ShouldReturn_Password_ValidOrNot()
+        {
+            string result = regex.ValidatePassword("VaibhavID");
+            Assert.AreEqual("Valid", result);
+        }
     }
 }
